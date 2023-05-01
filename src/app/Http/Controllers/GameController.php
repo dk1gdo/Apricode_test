@@ -104,7 +104,7 @@ class GameController extends Controller
             }
             $game->push();
         }
-        return response($this->show($game->id));
+        return response($this->prepareGame($game));
     }
 
     /**
